@@ -1,0 +1,49 @@
+html, body {
+    height: 100%;
+  }
+
+body {
+    background-color: #edf8fe;
+}
+
+img {
+    padding-top: 0.5%;
+    padding-left: 0.5%;
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    background-color: #ffffff;
+    height: 80px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    
+}
+
+.mat-toolbar {
+    background-color: #ffffff;
+    height: 130px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+}
+
+button {
+    color: rgb(0, 0, 0);
+    position: relative;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,.2);
+    margin: 0.5%;
+    margin-top: 1.5%;
+}
+
+.Alumnos{
+    
+    /*Alinear a la derecha de todo */
+    margin-left: 70%;
+}
+
+.barra_botones{
+    margin-left: 1%;
+}
