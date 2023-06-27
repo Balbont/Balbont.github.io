@@ -1,12 +1,29 @@
 .grid-container {
     margin: 25px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    border: 1px solid gray;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-mat-card {
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 10px;
     margin: 10px;
-    max-width: fit-content;
-    max-height: max-content;
+    font-size: 30px;
+    text-align: center;
+    min-height: 250px;
+}
+
+.primero {
+    background-image: url("../../../assets/static/grudank.jpg");
+    background-size: cover;
+}
+
+.dos {
+    background-image: url("../../../assets/static/weas.png");
+    background-size: cover;
 }
