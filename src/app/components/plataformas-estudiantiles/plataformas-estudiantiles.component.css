@@ -1,0 +1,12 @@
+.grid-container {
+    margin: 25px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid gray;
+}
+
+mat-card {
+    margin: 10px;
+    max-width: fit-content;
+    max-height: max-content;
+}
