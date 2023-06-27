@@ -1,14 +1,95 @@
 <body>
 
   <mat-toolbar>  
-
     <mat-toolbar-row>
-      <img src="./assets/static/descargar.png" width="20%" height="20%" alt="">
-      <p class="Alumnos">
-        Alumnos USM
-      </p>
-      
+      <img class="logo" src="./assets/static/descargar.png" width="20%" height="20%" alt="">
+      <font class="Alumnos" face = "sans-serif" size = "6" color = "black"> 
+        <b>Alumnos USM</b>
+      </font>
     </mat-toolbar-row>
+  </mat-toolbar>
+
+  <div>
+    <br>
+
+    <div class="noticias">
+        <br>
+        <br>
+        <br>
+        <font face = "sans-serif" size = "4" color = "black"> 
+          <b>Aqui van las noticias</b>
+        </font>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+    <div class="secciones">
+        <br>
+        <br>
+        <br>
+        <font face = "sans-serif" size = "4" color = "black"> 
+          <b>Aqui van las categorias</b>
+        </font>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+  </div>
+
+  <!--
   
   <mat-toolbar-row class="barra_botones">
       <button mat-raised-button (click)="cambiar(1)"> Plataformas Estudiantiles</button>
@@ -19,30 +100,9 @@
       <button mat-raised-button (click)="cambiar(6)"> Reglamentos y Protocolos</button>
       <button mat-raised-button (click)="cambiar(7)"> Contacto</button>
   </mat-toolbar-row>  
-  </mat-toolbar>
+  -->
 
-  <div [ngSwitch]="categoria">
-    <div *ngSwitchCase="'Plataformas Estudiantiles'">
-      <app-plataformas-estudiantiles></app-plataformas-estudiantiles>
-    </div>
-    <div *ngSwitchCase="'Recursos Campus'">
-      <app-recursos-campus></app-recursos-campus>
-    </div>
-    <div *ngSwitchCase="'Beneficios Estudiantiles'">
-      <app-beneficios-estudiantiles></app-beneficios-estudiantiles>
-    </div> 
-    <div *ngSwitchCase="'Programas de Intercambio'">
-      <app-programas-de-intercambio></app-programas-de-intercambio>
-    </div>
-    <div *ngSwitchCase="'Calendario Académico'">
-      <app-calendario-academico></app-calendario-academico>
-    </div>
-    <div *ngSwitchCase="'Reglamentos y Protocolos'">
-      <app-beneficios-estudiantiles></app-beneficios-estudiantiles>
-    </div> 
-    <div *ngSwitchCase="'Contacto'">
-      <app-contacto></app-contacto>
-    </div>
-  </div>
+
+  
   <router-outlet></router-outlet>
 </body>
