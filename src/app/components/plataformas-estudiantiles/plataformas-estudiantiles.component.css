@@ -17,13 +17,3 @@
     text-align: center;
     min-height: 250px;
 }
-
-.primero {
-    background-image: url("../../../assets/static/grudank.jpg");
-    background-size: cover;
-}
-
-.dos {
-    background-image: url("../../../assets/static/weas.png");
-    background-size: cover;
-}
