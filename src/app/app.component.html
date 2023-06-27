@@ -1,48 +1,57 @@
 <body>
 
   <mat-toolbar>  
-
     <mat-toolbar-row>
-      <img src="./assets/static/descargar.png" width="20%" height="20%" alt="">
-      <p class="Alumnos">
-        Alumnos USM
-      </p>
-      
+      <img class="logo" src="./assets/static/descargar.png" width="20%" height="20%" alt="">
+      <h1 class="Alumnos" face = "sans-serif" size = "6" color = "black"> 
+        <b>Alumnos USM</b>
+      </h1>
     </mat-toolbar-row>
-  
-  <mat-toolbar-row class="barra_botones">
-      <button mat-raised-button (click)="cambiar(1)"> Plataformas Estudiantiles</button>
-      <button mat-raised-button (click)="cambiar(2)"> Recursos Campus</button>
-      <button mat-raised-button (click)="cambiar(3)"> Beneficios Estudiantiles</button>
-      <button mat-raised-button (click)="cambiar(4)"> Programas de Intercambio</button>
-      <button mat-raised-button (click)="cambiar(5)"> Calendario Académico</button>
-      <button mat-raised-button (click)="cambiar(6)"> Reglamentos y Protocolos</button>
-      <button mat-raised-button (click)="cambiar(7)"> Contacto</button>
-  </mat-toolbar-row>  
   </mat-toolbar>
 
-  <div [ngSwitch]="categoria">
-    <div *ngSwitchCase="'Plataformas Estudiantiles'">
-      <app-plataformas-estudiantiles></app-plataformas-estudiantiles>
-    </div>
-    <div *ngSwitchCase="'Recursos Campus'">
-      <app-recursos-campus></app-recursos-campus>
-    </div>
-    <div *ngSwitchCase="'Beneficios Estudiantiles'">
-      <app-beneficios-estudiantiles></app-beneficios-estudiantiles>
-    </div> 
-    <div *ngSwitchCase="'Programas de Intercambio'">
-      <app-programas-de-intercambio></app-programas-de-intercambio>
-    </div>
-    <div *ngSwitchCase="'Calendario Académico'">
-      <app-calendario-academico></app-calendario-academico>
-    </div>
-    <div *ngSwitchCase="'Reglamentos y Protocolos'">
-      <app-beneficios-estudiantiles></app-beneficios-estudiantiles>
-    </div> 
-    <div *ngSwitchCase="'Contacto'">
-      <app-contacto></app-contacto>
+  <div>
+    <div class="grid-container">
+      <mat-card class="noticias">
+          <mat-card-header>
+              <mat-card-title>Semana de la Mujer y Disidencias USM</mat-card-title>
+          </mat-card-header>
+          <br>
+          <img mat-card-image class="imagen1" src="assets/static/semanaMujer.jpg" alt="Plataformas Estudiantiles">
+          <mat-card-content>
+            <br>
+            <p>En la primera Semana de la Mujer y Disidencias USM, 
+              organizada por el Proyecto Ingeniería 2030 junto a los 
+              Centros de Estudiantes.</p>
+          </mat-card-content>
+      </mat-card>
+
+
+      <!--
+        <div class="grid-item secciones">links<br>asdasd</div>
+      -->
+      
+      <mat-card class="secciones">
+          <mat-card-header>
+              <mat-card-title>MENU</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+                
+          </mat-card-content>
+      </mat-card>
+
+      <mat-card class="noticias">
+          <mat-card-header>
+              <mat-card-title>Modificación precios casino San Joaquin</mat-card-title>
+          </mat-card-header>
+          <br>
+          <img mat-card-image class="imagen2" src="assets/static/13518301-o_xl.webp" alt="Plataformas Estudiantiles">
+          <mat-card-content>
+            <br>
+              <p>Conoce los nuevos precios que comenzaran a regir desde el año 2024 en el 
+                casino del campus San Joaquin</p>
+                
+          </mat-card-content>
+      </mat-card>
     </div>
   </div>
-  <router-outlet></router-outlet>
 </body>
